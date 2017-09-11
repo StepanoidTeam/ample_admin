@@ -251,20 +251,18 @@
 
                                 <thead>
                                 <tr role="row">
-                                    <td colspan="2">
+                                    <td colspan="1">
                                         <button type="button" class="btn btn-info btn-rounded" data-toggle="modal"
                                                 data-target="#add-contact">Add Patient
                                         </button>
                                     </td>
 
-                                    <td colspan="4">
+                                    <td colspan="5">
                                         <div class="text-right">
-                                            <div class="dataTables_length" id="myTable_length">
-                                                <label> Patient Status Filter
-                                                    <select name="myTable_length" aria-controls="myTable" class="">
-                                                        <option value="10">Active</option>
-                                                        <option value="25">Inactive</option>
-                                                    </select>
+                                            <div id="editable-datatable_filter" class="dataTables_filter">
+                                                <label>Search:
+                                                    <input type="search" class="form-control input-sm" placeholder=""
+                                                    aria-controls="editable-datatable">
                                                 </label>
                                             </div>
 
@@ -348,6 +346,20 @@
                                 </tr>
                                 </tbody>
                             </table>
+
+
+                            <div class="text-center">
+                                <ul class="pagination m-b-0">
+                                    <li class="disabled"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li class="active"><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+
 
                         </div>
                     </div>
