@@ -206,15 +206,14 @@
                 <h3><span class="fa-fw open-close"><i class="ti-menu hidden-xs"></i><i class="ti-close visible-xs"></i></span>
                     <span class="hide-menu">Navigation</span></h3></div>
             <ul class="nav" id="side-menu">
-                <li><a href="_user-list.html" class="waves-effect active">
+                <li><a href="_user-list.html" class="waves-effect">
                     <i class="icon-eyeglass"></i>
                     <span class="hide-menu"> Users </span></a>
                 </li>
-                <li><a href="_patient-list.html" class="waves-effect">
+                <li><a href="_patient-list.html" class="waves-effect active">
                     <i class="icon-people"></i>
                     <span class="hide-menu"> Patients </span></a>
                 </li>
-
             </ul>
         </div>
     </div>
@@ -225,7 +224,7 @@
             <div class="row bg-title">
                 <!-- .page title -->
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title">Users</h4></div>
+                    <h4 class="page-title">Edit User</h4></div>
                 <!-- /.page title -->
                 <!-- .breadcrumb -->
                 <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
@@ -233,7 +232,7 @@
                             class="ti-settings text-white"></i></button>
                     <ol class="breadcrumb">
                         <li><a href="#">Dashboard</a></li>
-                        <li class="active">Users</li>
+                        <li class="active">Patients</li>
                     </ol>
                 </div>
                 <!-- /.breadcrumb -->
@@ -241,159 +240,73 @@
             <!-- .row -->
             <div class="row">
                 <div class="col-md-12">
-                    <div class="white-box">
-                        <h3 class="box-title">User List</h3>
-
-                        <div class="table-responsive">
-
-                            <table id="myTable" class="table table-striped dataTable no-footer" role="grid"
-                                   aria-describedby="myTable_info">
-
-
-                                <thead>
-                                <tr role="row">
-                                    <td colspan="2">
-                                        <button type="button" class="btn btn-info btn-rounded" data-toggle="modal"
-                                                data-target="#add-contact">Add User
-                                        </button>
-                                    </td>
-
-                                    <td colspan="5">
-                                        <div class="text-right">
-                                            <div class="dataTables_length" id="myTable_length">
-                                                <label> User Status Filter
-                                                    <select name="myTable_length" aria-controls="myTable" class="">
-                                                        <option value="10">Active</option>
-                                                        <option value="25">Inactive</option>
-                                                    </select>
-                                                </label>
-                                            </div>
-
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                </thead>
-
-                                <thead>
-                                <tr role="row">
-                                    <th class="sorting_asc" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1"
-                                        aria-sort="ascending" aria-label="Name: activate to sort column descending"
-                                        style="width: 324px;">Name
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1"
-                                        aria-label="Role: activate to sort column ascending" style="width: 482px;">Role
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1"
-                                        aria-label="E-mail: activate to sort column ascending" style="width: 245px;">
-                                        E-mail
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1"
-                                        aria-label="Phone: activate to sort column ascending" style="width: 138px;">
-                                        Phone
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1"
-                                        aria-label="Branch: activate to sort column ascending" style="width: 250px;">
-                                        Branch
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1"
-                                        aria-label="Facility: activate to sort column ascending" style="width: 202px;">
-                                        Facility
-                                    </th>
-                                    <th class="sorting" tabindex="0" aria-controls="myTable" rowspan="1" colspan="1"
-                                        aria-label="Active: activate to sort column ascending" style="width: 202px;">
-                                        Active
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1">John Smith</td>
-                                    <td>User</td>
-                                    <td>K.Smithy@gmail.com</td>
-                                    <td>541-744-30-10</td>
-                                    <td>Branch</td>
-                                    <td>Facility</td>
-                                    <td><input type="checkbox"></td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1">Angelina Joli</td>
-                                    <td>Sister</td>
-                                    <td>Angelina@gmail.com</td>
-                                    <td>341-754-30-10</td>
-                                    <td>Branch</td>
-                                    <td>Facility</td>
-                                    <td><input type="checkbox"></td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1">Brad Pit</td>
-                                    <td>Brother</td>
-                                    <td>Brad@gmail.com</td>
-                                    <td>241-754-30-10</td>
-                                    <td>Branch</td>
-                                    <td>Facility</td>
-                                    <td><input type="checkbox"></td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1">John Smith</td>
-                                    <td>User</td>
-                                    <td>K.Smithy@gmail.com</td>
-                                    <td>541-744-30-10</td>
-                                    <td>Branch</td>
-                                    <td>Facility</td>
-                                    <td><input type="checkbox"></td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1">Angelina Joli</td>
-                                    <td>Sister</td>
-                                    <td>Angelina@gmail.com</td>
-                                    <td>341-754-30-10</td>
-                                    <td>Branch</td>
-                                    <td>Facility</td>
-                                    <td><input type="checkbox"></td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1">Brad Pit</td>
-                                    <td>Brother</td>
-                                    <td>Brad@gmail.com</td>
-                                    <td>241-754-30-10</td>
-                                    <td>Branch</td>
-                                    <td>Facility</td>
-                                    <td><input type="checkbox"></td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1">John Smith</td>
-                                    <td>User</td>
-                                    <td>K.Smithy@gmail.com</td>
-                                    <td>541-744-30-10</td>
-                                    <td>Branch</td>
-                                    <td>Facility</td>
-                                    <td><input type="checkbox"></td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1">Angelina Joli</td>
-                                    <td>Sister</td>
-                                    <td>Angelina@gmail.com</td>
-                                    <td>341-754-30-10</td>
-                                    <td>Branch</td>
-                                    <td>Facility</td>
-                                    <td><input type="checkbox"></td>
-                                </tr>
-                                <tr role="row" class="odd">
-                                    <td class="sorting_1">Brad Pit</td>
-                                    <td>Brother</td>
-                                    <td>Brad@gmail.com</td>
-                                    <td>241-754-30-10</td>
-                                    <td>Branch</td>
-                                    <td>Facility</td>
-                                    <td><input type="checkbox"></td>
-                                </tr>
-
-                                </tbody>
-                            </table>
-
+                    <div class="col-md-12">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">First Name</label>
+                                <input type="text" id="firstName" class="form-control" placeholder="First Name"> <span class="help-block"> </span> </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Last Name</label>
+                                <input type="text" id="lastName" class="form-control" placeholder="Last Name"> <span class="help-block"> </span> </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Username</label>
+                                <input type="text" id="userName" class="form-control" placeholder="Username"> <span class="help-block"> </span> </div>
                         </div>
                     </div>
-
+                    <div class="col-md-12">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Phone</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="(000)000-0000" > <span class="help-block"> </span> </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Email</label>
+                                <input type="email" id="eMail" class="form-control" placeholder="" > <span class="help-block"> </span> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Branch</label>
+                                <select class="form-control">
+                                    <option value=""></option>
+                                    <option value="">Branch</option>
+                                </select> <span class="help-block"> </span> </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Facility</label>
+                                <select class="form-control">
+                                    <option value=""></option>
+                                    <option value="">Facility</option>
+                                </select> <span class="help-block"> </span> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="control-label">Role</label>
+                                <select class="form-control">
+                                    <option value=""></option>
+                                    <option value="">User</option>
+                                    <option value="">Sister</option>
+                                    <option value="">Brother</option>
+                                </select> <span class="help-block"> </span> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-lg-2 col-sm-4 col-xs-12 col-lg-offset-8">
+                            <button class="btn btn-block btn-success">Save</button>
+                        </div>
+                        <div class="col-lg-2 col-sm-4 col-xs-12 ">
+                            <button class="btn btn-block btn-danger">Cancel</button>
+                        </div>
+                    </div>
 
                 </div>
             </div>
